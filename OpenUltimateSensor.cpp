@@ -1,15 +1,15 @@
-// Do not remove the include below
 #include "OpenUltimateSensor.h"
 
+int led = 13;
 
-//The setup function is called once at startup of the sketch
 void setup()
 {
-// Add your initialization code here
+	  pinMode(led, OUTPUT);
 }
-
-// The loop function is called in an endless loop
 void loop()
 {
-//Add your repeated code here
+	  digitalWrite(led, HIGH);
+	  delay(500);
+	  digitalWrite(led, LOW);
+	  delay(500);
 }
